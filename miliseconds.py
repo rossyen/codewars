@@ -19,9 +19,15 @@ Input constraints:
 '''
 
 # first attempt
-def past(h, m, s):
+def time_since_midnight(h, m, s):
     return ((h*60*60*1000)+(m*60*1000)+(s*1000)) if 0 <= h <= 23 and 0 <= m <= 59 and  0 <= s <= 59 else 0
 
    
 # test
-print(past(0,1,1))
+print(time_since_midnight(0,1,1))
+
+# best practice from codewars
+'''
+def past(h, m, s):
+    return (3600*h + 60*m + s) * 1000
+'''
