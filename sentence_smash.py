@@ -6,6 +6,7 @@ Be careful, there shouldn't be a space at the beginning or the end of the senten
 
 '''
 
+# first attempt
 def smash(words):
     a = []
     string = str()
@@ -17,8 +18,14 @@ def smash(words):
         string = " ".join(str(element) for element in words)
         return string
 
+# best practice stolen from codewars 
+'''
+def smash(words):
+    return " ".join(words)
 
+'''
 
+# testcode
 def main():
     empty_list = []
     single_item_list = ["hello"]
@@ -29,7 +36,7 @@ def main():
     #print(smash(single_item_list))
     #print(smash(multiple_item_list))
     #print(smash(mil2))
-    #print(smash(mil3))
+    print(smash(mil3))
 
 
 if __name__ == "__main__":
