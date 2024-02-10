@@ -14,3 +14,9 @@ Examples:
 # first attempt
 def opposite(number):
     return -number
+
+# best practice from codewars
+'''
+def opposite(number):
+    return -number
+'''
