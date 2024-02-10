@@ -10,3 +10,11 @@ def bool_to_word(boolean):
         return "Yes"
     else:
         return "No"
+    
+
+    
+# best practice from codewars
+'''
+def bool_to_word(bool):
+    return "Yes" if bool else "No"
+'''
