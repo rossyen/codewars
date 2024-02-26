@@ -17,9 +17,6 @@ test = 9119 # should give 811181
 test2 = 0
 
 def square_digits(num):
-    for i in num:
-        print(math.sqrt(i))
-        
-
-
-square_digits(test)
+    str_num = str(num)
+    sqr_num = "".join(str(int(math.pow(int(char), 2))) for char in str_num)
+    return int(sqr_num)                    
